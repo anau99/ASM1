@@ -1,0 +1,1 @@
+<% response.sendRedirect("UserDonation/donationList"); %>

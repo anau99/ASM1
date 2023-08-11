@@ -1,0 +1,17 @@
+demoCRUD.Controller.DonationController=org.springframework.stereotype.Component
+demoCRUD.Controller.UserController=org.springframework.stereotype.Component
+demoCRUD.Controller.UserDonationController=org.springframework.stereotype.Component
+demoCRUD.Dao.DonationDaoImpl=org.springframework.stereotype.Component
+demoCRUD.Dao.RoleDaoImpl=org.springframework.stereotype.Component
+demoCRUD.Dao.UserDaoImpl=org.springframework.stereotype.Component
+demoCRUD.Dao.UserDonationDaoImpl=org.springframework.stereotype.Component
+demoCRUD.Entity.Donation=javax.persistence.Entity,javax.persistence.Table
+demoCRUD.Entity.Role=javax.persistence.Entity,javax.persistence.Table
+demoCRUD.Entity.User=javax.persistence.Entity,javax.persistence.Table
+demoCRUD.Entity.UserDonation=javax.persistence.Entity,javax.persistence.Table
+demoCRUD.Service.DonationServiceImpl=org.springframework.stereotype.Component
+demoCRUD.Service.RoleServiceImpl=org.springframework.stereotype.Component
+demoCRUD.Service.UserDonationService=org.springframework.stereotype.Component
+demoCRUD.Service.UserDonationServiceImpl=org.springframework.stereotype.Component
+demoCRUD.Service.UserService=org.springframework.stereotype.Component
+demoCRUD.Service.UserServiceImpl=org.springframework.stereotype.Component
