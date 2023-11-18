@@ -37,7 +37,7 @@
 	<bean id="myDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
 		  destroy-method="close">
 		<property name="driverClass" value="com.mysql.cj.jdbc.Driver" />
-		<property name="SPRING_DATASOURCE_URL" value="jdbc:mysql://cis9cbtgerlk68wl.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/ew6i0ifl5x9exr33?password=mzre704daokc7ls7&user=no6jbvqz9xymjdfk"/>
+		<property name="JAWSDB_URL" value="jdbc:mysql://cis9cbtgerlk68wl.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/ew6i0ifl5x9exr33?password=mzre704daokc7ls7&user=no6jbvqz9xymjdfk"/>
 		<property name="SPRING_DATASOURCE_USERNAME" value="no6jbvqz9xymjdfk" />
 		<property name="JDBC_DATABASE_PASSWORD" value="mzre704daokc7ls7" />
 
