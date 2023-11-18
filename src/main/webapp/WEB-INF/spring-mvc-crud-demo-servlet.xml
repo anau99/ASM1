@@ -35,22 +35,20 @@
 
     <!-- Step 1: Define Database DataSource / connection pool -->
 	<bean id="myDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
-          destroy-method="close">
-        <property name="driverClass" value="com.mysql.cj.jdbc.Driver" />
-		<!--	<property name="jdbcUrl" value="jdbc:mysql://cis9cbtgerlk68wl.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/ew6i0ifl5x9exr33" />-->
-           <property name="jdbcUrl" value="${JAWSDB_URL}" />
+		  destroy-method="close">
+		<property name="driverClass" value="com.mysql.cj.jdbc.Driver" />
+		<property name="SPRING_DATASOURCE_URL" value="jdbc:mysql://cis9cbtgerlk68wl.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/ew6i0ifl5x9exr33?password=mzre704daokc7ls7&user=no6jbvqz9xymjdfk"/>
+		<property name="SPRING_DATASOURCE_USERNAME" value="no6jbvqz9xymjdfk" />
+		<property name="JDBC_DATABASE_PASSWORD" value="mzre704daokc7ls7" />
 
-             <property name="user" value="no6jbvqz9xymjdfk" />
-             <property name="password" value="mzre704daokc7ls7" />
-
-             <!-- these are connection pool properties for C3P0 -->
+		<!-- these are connection pool properties for C3P0 -->
 		<property name="initialPoolSize" value="5"/>
-        <property name="minPoolSize" value="5" />
-        <property name="maxPoolSize" value="20" />
-        <property name="maxIdleTime" value="30000" />
-	</bean>  
-	
-    <!-- Step 2: Setup Hibernate session factory -->
+		<property name="minPoolSize" value="5" />
+		<property name="maxPoolSize" value="20" />
+		<property name="maxIdleTime" value="30000" />
+	</bean>
+
+	<!-- Step 2: Setup Hibernate session factory -->
 	<bean id="sessionFactory"
 		class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
 		<property name="dataSource" ref="myDataSource" />
