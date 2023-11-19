@@ -17,5 +17,6 @@ public class testDB {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        String x = "hello";
     }
 }
