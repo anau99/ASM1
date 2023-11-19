@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+
 import javax.servlet.http.HttpSession;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -39,7 +40,7 @@ public class DonationController {
     * @param HttpSession httpSession để thông báo là là đã tạo mới thành công hay không?
      */
     @PostMapping("/saveDonation")
-    public String saveDonation(@RequestParam Map<String, Object> params,HttpSession httpSession) throws ParseException {
+    public String saveDonation(@RequestParam Map<String, Object> params, HttpSession httpSession) throws ParseException {
         String startDateStr = (String) params.get("startDate");
         String endDateStr = (String) params.get("endDate");
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
