@@ -21,6 +21,6 @@
   
   <servlet-mapping>
     <servlet-name>dispatcher</servlet-name>
-    <url-pattern>/UserDonation/donationList/</url-pattern>
+    <url-pattern>/UserDonation/donationList/*</url-pattern>
   </servlet-mapping>
 </web-app>
