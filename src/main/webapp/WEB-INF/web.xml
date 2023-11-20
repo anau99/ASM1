@@ -21,6 +21,6 @@
   
   <servlet-mapping>
     <servlet-name>dispatcher</servlet-name>
-    <url-pattern>/https://springdonation-276059caa604.herokuapp.com/UserDonation/donationList/</url-pattern>
+    <url-pattern>/springdonation-276059caa604.herokuapp.com/UserDonation/donationList/</url-pattern>
   </servlet-mapping>
 </web-app>
