@@ -23,7 +23,7 @@ public class UserDonationController {
         //get users and all roles
         List<Donation>donations = userDonationService.getDonationsLimitFive();
         theModel.addAttribute("donations",donations);
-        return "home.jsp";
+        return "home";
     }
 
     @GetMapping("/detailDonation")
